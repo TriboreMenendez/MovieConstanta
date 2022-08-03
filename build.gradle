@@ -1,4 +1,13 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.versions = [:]
+    versions.lifecycle_version = "2.5.0-rc01"
+    versions.fragment_version = "1.5.1"
+    versions.dagger_version = "2.42"
+    versions.coroutines_version = "1.6.1"
+    versions.retrofit_version = "2.9.0"
+}
+
 plugins {
     id 'com.android.application' version '7.2.1' apply false
     id 'com.android.library' version '7.2.1' apply false
