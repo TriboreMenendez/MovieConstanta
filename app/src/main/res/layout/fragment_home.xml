@@ -12,6 +12,22 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="8dp"
+        android:visibility="gone"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         tools:listitem="@tools:sample/cities" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/btnRefreshNetwork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/refreshData"
+        android:visibility="gone" />
 </FrameLayout>

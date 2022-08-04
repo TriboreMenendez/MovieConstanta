@@ -27,7 +27,7 @@ class MovieAdapter(private val onClick: (item: Movie) -> Unit) :
         return MovieViewHolder(
             ItemRvMovieBinding.inflate(
                 LayoutInflater.from(parent.context), parent, false
-            )
+            ), onClick = onClick
         )
     }
 
@@ -38,17 +38,19 @@ class MovieAdapter(private val onClick: (item: Movie) -> Unit) :
 }
 
 class MovieViewHolder(
-    private val binding: ItemRvMovieBinding
+    private val binding: ItemRvMovieBinding,
+    private val onClick: (item: Movie) -> Unit
 ) : RecyclerView.ViewHolder(binding.root) {
 
-    val context = binding.root.context
+    private val context = binding.root.context
 
     fun bind(item: Movie) {
         binding.apply {
-            tvTitle.text = item.title
+            tvTitle.text = context.getString(R.string.txt_title, item.title)
             tvReleaseYear.text = context.getString(R.string.txt_release_year, item.releaseYear.toString())
             tvDirectorsName.text = context.getString(R.string.txt_director, item.directorName)
             tvActors.text = context.getString(R.string.txt_actors, item.actors.toListActor())
+            root.setOnClickListener { onClick(item) }
         }
     }
 

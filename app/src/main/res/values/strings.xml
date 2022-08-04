@@ -2,8 +2,13 @@
     <string name="app_name">MovieConstanta</string>
 
     <!-- Item recycler view -->
-    <string name="txt_title">Title</string>
+    <string name="txt_title">\"%s\"</string>
     <string name="txt_release_year"> (%s)</string>
     <string name="txt_director">Режиссер: %s</string>
     <string name="txt_actors">Актеры: %s</string>
+
+    <!-- Dialog selected movie -->
+    <string name="txt_selected_movie">Фильм \"%s\" был нажат.</string>
+    <string name="txt_ok">Ок</string>
+    <string name="refreshData">Повторить попытку</string>
 </resources>
