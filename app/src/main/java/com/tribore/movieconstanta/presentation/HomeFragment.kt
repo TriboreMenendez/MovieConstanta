@@ -10,6 +10,7 @@ import androidx.fragment.app.viewModels
 import com.google.android.material.snackbar.Snackbar
 import com.tribore.movieconstanta.MovieApp
 import com.tribore.movieconstanta.databinding.FragmentHomeBinding
+import com.tribore.movieconstanta.di.ViewModelsFactory
 import com.tribore.movieconstanta.domain.models.Movie
 import dagger.Lazy
 import javax.inject.Inject

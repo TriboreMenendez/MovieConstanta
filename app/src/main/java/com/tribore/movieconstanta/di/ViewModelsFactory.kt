@@ -1,4 +1,4 @@
-package com.tribore.movieconstanta.presentation
+package com.tribore.movieconstanta.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

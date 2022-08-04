@@ -1,6 +1,5 @@
 package com.tribore.movieconstanta.domain.repository
 
-import com.tribore.movieconstanta.domain.models.ListMovies
 import com.tribore.movieconstanta.domain.models.Movie
 
 interface MovieRepository {
