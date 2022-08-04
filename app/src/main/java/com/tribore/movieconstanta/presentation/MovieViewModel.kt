@@ -1,6 +1,5 @@
 package com.tribore.movieconstanta.presentation
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -19,7 +18,6 @@ class MovieViewModel @Inject constructor(
 
     init {
         loadData()
-        Log.d("TAG", "Init vm")
     }
 
     private fun loadData() {
